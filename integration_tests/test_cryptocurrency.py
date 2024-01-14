@@ -18,7 +18,7 @@ class TestCryptoCurrencyEndpoints(TestCase):
         """
 
         # Make the request.
-        response = requests.get("http://127.0.0.1:8000/cryptocurrency/quotes/latest?symbols=BTC&symbols=ETH")
+        response = requests.get("http://127.0.0.1:8000/cryptocurrency/quotes/latest?symbol=BTC&symbol=ETH")
 
         # Assert the response.
         self.assertEqual(response.status_code, 200)

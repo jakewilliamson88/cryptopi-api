@@ -2,6 +2,6 @@
 venv/
 dist/
 build/
-cryptofi-api.egg.info
+cryptofi_api.egg.info/
 Makefile
 cryptopi-api.iml

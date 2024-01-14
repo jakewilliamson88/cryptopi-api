@@ -1,0 +1,7 @@
+.idea/
+venv/
+dist/
+build/
+cryptofi-api.egg.info
+Makefile
+cryptopi-api.iml

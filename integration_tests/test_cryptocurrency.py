@@ -32,8 +32,5 @@ class TestCryptoCurrencyEndpoints(TestCase):
         # Make the request.
         response = requests.get("http://127.0.0.1:8000/cryptocurrency/info?symbol=BTC&symbol=ETH&aux=logo")
 
-        import pprint
-        pprint.pprint(response.json())
-
         # Assert the response.
         self.assertEqual(response.status_code, 200)

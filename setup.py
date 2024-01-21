@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = "0.0.3"
+VERSION = "0.0.4"
 DESCRIPTION = "A simple Flask API for the `cryptopi` package."
 
 setup(
@@ -12,6 +12,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         "requests",
+        "starlette",
         "fastapi",
         "cryptopi",
         "pydantic",

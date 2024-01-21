@@ -22,3 +22,18 @@ class TestCryptoCurrencyEndpoints(TestCase):
 
         # Assert the response.
         self.assertEqual(response.status_code, 200)
+
+    def test_get_info(self):
+        """
+        This function tests the /cryptocurrency/info endpoint.
+        :return:
+        """
+
+        # Make the request.
+        response = requests.get("http://127.0.0.1:8000/cryptocurrency/info?symbol=BTC&symbol=ETH&aux=logo")
+
+        import pprint
+        pprint.pprint(response.json())
+
+        # Assert the response.
+        self.assertEqual(response.status_code, 200)
